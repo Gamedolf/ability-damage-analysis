@@ -9,8 +9,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          ref: 'gh-pages'
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -24,13 +22,6 @@ jobs:
       - name: Predeploy
         run: npm run predeploy
 
-      - name: Upload
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./dist
-          name: github-page
-          retention-days: 1
-
   deploy:
     needs: build
 
@@ -38,15 +29,8 @@ jobs:
       pages: write
       id-token: write
 
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
     runs-on: ubuntu-latest
     steps:
       - name: Deploy to Github Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-        with:
-          token: ${{ github.token }}
+        run: npm run deploy
     
