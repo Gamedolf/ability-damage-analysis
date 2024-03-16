@@ -5,15 +5,15 @@ function App() {
   return (
     <>
       <Header/>
-      <div class="space-y-14 z-20">
-            <div class="responsive-container">
-                <section class="grid xl:grid-cols-12 gap-6 xl:gap-8"> 
-                    <div class="xl:col-span-9 xl:row-start-1 xl:row-span-4 md:pt-6">
-                        <div class="flex flex-col">
-                            <h1 class="main-header mb-6 ml-3">Welcome to RS Analysis</h1>
-                            <div class="card border-b border-card-light">
-                                <div class="pb-5">
-                                    <div class="card-title">
+      <div className="space-y-14 z-20">
+            <div className="responsive-container">
+                <section className="grid xl:grid-cols-12 gap-6 xl:gap-8"> 
+                    <div className="xl:col-span-9 xl:row-start-1 xl:row-span-4 md:pt-6">
+                        <div className="flex flex-col">
+                            <h1 className="main-header mb-6 ml-3">Welcome to RS Analysis</h1>
+                            <div className="card border-b border-card-light">
+                                <div className="pb-5">
+                                    <div className="card-title">
                                         About
                                     </div>
                                     <div>
@@ -26,41 +26,41 @@ function App() {
                                     </div>
                                 </div>
                             </div>
-                            <a href="./magic.html" class="flex flex-col group">
-                                <div class="card border-b border-card-light">
-                                    <div class="flex items-center transform-gpu translate-x-0 group-hover:translate-x-2 transition-all">
-                                        <img class="card-icon" src="assets/style_icons/magic.svg" />
-                                        <div class="card-title">
+                            <a href="./magic.html" className="flex flex-col group">
+                                <div className="card border-b border-card-light">
+                                    <div className="flex items-center transform-gpu translate-x-0 group-hover:translate-x-2 transition-all">
+                                        <img className="card-icon" src="assets/style_icons/magic.svg" />
+                                        <div className="card-title">
                                             Magic Damage Calculator
                                         </div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="./melee.html" class="flex flex-col group">
-                                <div class="card border-b border-card-light">
-                                    <div class="flex items-center transform-gpu translate-x-0 group-hover:translate-x-2 transition-all">
-                                        <img class="card-icon" src="assets/style_icons/melee.svg" />
-                                        <div class="card-title">
+                            <a href="./melee.html" className="flex flex-col group">
+                                <div className="card border-b border-card-light">
+                                    <div className="flex items-center transform-gpu translate-x-0 group-hover:translate-x-2 transition-all">
+                                        <img className="card-icon" src="assets/style_icons/melee.svg" />
+                                        <div className="card-title">
                                             Melee Damage Calculator
                                         </div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="./ranged.html" class="flex flex-col group">
-                                <div class="card border-b border-card-light">
-                                    <div class="flex items-center transform-gpu translate-x-0 group-hover:translate-x-2 transition-all">
-                                        <img class="card-icon" src="assets/style_icons/ranged.svg" />
-                                        <div class="card-title">
+                            <a href="./ranged.html" className="flex flex-col group">
+                                <div className="card border-b border-card-light">
+                                    <div className="flex items-center transform-gpu translate-x-0 group-hover:translate-x-2 transition-all">
+                                        <img className="card-icon" src="assets/style_icons/ranged.svg" />
+                                        <div className="card-title">
                                             Ranged Damage Calculator
                                         </div>
                                     </div>
                                 </div>
                             </a>
-                            <a href="./necromancy.html" class="flex flex-col group">
-                                <div class="card">
-                                    <div class="flex items-center transform-gpu translate-x-0 group-hover:translate-x-2 transition-all">
-                                        <img class="card-icon" src="assets/style_icons/necro.svg" />
-                                        <div class="card-title">
+                            <a href="./necromancy.html" className="flex flex-col group">
+                                <div className="card">
+                                    <div className="flex items-center transform-gpu translate-x-0 group-hover:translate-x-2 transition-all">
+                                        <img className="card-icon" src="assets/style_icons/necro.svg" />
+                                        <div className="card-title">
                                             Necromancy Damage Calculator
                                         </div>
                                     </div>
@@ -68,19 +68,19 @@ function App() {
                             </a>
                         </div>
                     </div>
-                    <div class="xl:col-span-9 xl:row-start-5">
-                        <div class="flex flex-col">
-                            <h1 class="main-header mb-6 ml-3">Most Recent Publication</h1>
-                                <div class="card card-home">
+                    <div className="xl:col-span-9 xl:row-start-5">
+                        <div className="flex flex-col">
+                            <h1 className="main-header mb-6 ml-3">Most Recent Publication</h1>
+                                <div className="card card-home">
                                     <a href="./2024.001.pdf">
-                                        <div class="card-title hover:text-link">
+                                        <div className="card-title hover:text-link">
                                             Quantitative Analysis of RuneScape 3 Combat
                                         </div>
                                     </a>
-                                    <div class="pb-5">
+                                    <div className="pb-5">
                                         <em>Akritia, Kyroh, Gamedolf, Sfox</em>
                                     </div>
-                                    <div class="pl-5 pb-5">
+                                    <div className="pl-5 pb-5">
                                         <p>
                                             RuneScape Player versus Monster (PvM) encounters are fundamentally static.
                                             In most cases, Non-Player Character (NPC) behavior is structured the same across all instances of an encounter.
@@ -93,48 +93,48 @@ function App() {
                                             briefly examine the mathematical landscape of solving stochastic  Markov Decision Processes (MDPs) for massively large spaces in the context of RuneScape combat.
                                         </p>
                                     </div>
-                                    <div class="text-xs pb-5">
+                                    <div className="text-xs pb-5">
                                         <p>Comments:</p>
                                         <p>Subjects: Statistics - Methods, Dynamic Programming, Game Theory</p>
                                     </div>
-                                    <a href="./2024.001.pdf" class="hover:text-link">Open PDF</a>
+                                    <a href="./2024.001.pdf" className="hover:text-link">Open PDF</a>
                                 </div>
                         </div>
                     </div>
-                    <div class="xl:col-span-3 xl:row-start-1 xl:row-span-1 md:pt-20">
-                        <div class="flex flex-col">
-                            <div class="card card-home">
-                                <div class="card-title">
+                    <div className="xl:col-span-3 xl:row-start-1 xl:row-span-1 md:pt-20">
+                        <div className="flex flex-col">
+                            <div className="card card-home">
+                                <div className="card-title">
                                     Other Resources
                                 </div>
-                                <div class="effect-container">
-                                    <img class="effect-icon" src="assets/google_icons/book-blue.svg" />
-                                    <li class="block transition-all duration-75 relative">
-                                        <a href="./research.html" class="py-2 font-normal text-xl text-lb hover:text-link" title="">
+                                <div className="effect-container">
+                                    <img className="effect-icon" src="assets/google_icons/book-blue.svg" />
+                                    <li className="block transition-all duration-75 relative">
+                                        <a href="./research.html" className="py-2 font-normal text-xl text-lb hover:text-link" title="">
                                             Research
                                         </a>
                                     </li>
                                 </div>
-                                <div class="effect-container">
-                                    <img class="effect-icon" src="assets/google_icons/hammer-blue.svg" />
-                                    <li class="block transition-all duration-75 relative">
-                                        <a href="./projects.html" class="py-2 font-normal text-xl text-lb hover:text-link" title="">
+                                <div className="effect-container">
+                                    <img className="effect-icon" src="assets/google_icons/hammer-blue.svg" />
+                                    <li className="block transition-all duration-75 relative">
+                                        <a href="./projects.html" className="py-2 font-normal text-xl text-lb hover:text-link" title="">
                                             Upcoming Projects
                                         </a>
                                     </li>
                                 </div>
-                                <div class="effect-container">
-                                    <img class="effect-icon" src="assets/google_icons/discord-blue.svg" />
-                                    <li class="block transition-all duration-75 relative">
-                                        <a href="https://discord.gg/rsanalysis" class="py-2 font-normal text-xl text-lb hover:text-link" title="">
+                                <div className="effect-container">
+                                    <img className="effect-icon" src="assets/google_icons/discord-blue.svg" />
+                                    <li className="block transition-all duration-75 relative">
+                                        <a href="https://discord.gg/rsanalysis" className="py-2 font-normal text-xl text-lb hover:text-link" title="">
                                             Discord
                                         </a>
                                     </li>
                                 </div>
-                                <div class="effect-container">
-                                    <img class="effect-icon" src="assets/google_icons/faq-blue.svg" />
-                                    <li class="block transition-all duration-75 relative">
-                                        <a href="./faq.html" class="py-2 font-normal text-xl text-lb hover:text-link" title="">
+                                <div className="effect-container">
+                                    <img className="effect-icon" src="assets/google_icons/faq-blue.svg" />
+                                    <li className="block transition-all duration-75 relative">
+                                        <a href="./faq.html" className="py-2 font-normal text-xl text-lb hover:text-link" title="">
                                             FAQ
                                         </a>
                                     </li>
@@ -142,124 +142,124 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div class="xl:col-span-3 xl:row-start-2 xl:row-span-6">
-                        <div class="flex flex-col">
-                            <div class="card card-home">
-                                <div class="card-title pb-10">
+                    <div className="xl:col-span-3 xl:row-start-2 xl:row-span-6">
+                        <div className="flex flex-col">
+                            <div className="card card-home">
+                                <div className="card-title pb-10">
                                     Credit
                                 </div>
-                                <div class="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12 w-full">
-                                    <div class="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
-                                        <div class="mx-auto w-24 h-24 rounded-full bg-none overflow-hidden mb-3">
+                                <div className="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12 w-full">
+                                    <div className="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
+                                        <div className="mx-auto w-24 h-24 rounded-full bg-none overflow-hidden mb-3">
                                             <img src="./assets/contributors/akritia.webp" />
                                         </div>
-                                    <div class="text-center text-gray-light">Akritia</div>
-                                    <div class="text-center text-gray-light">Research and Development</div>
+                                    <div className="text-center text-gray-light">Akritia</div>
+                                    <div className="text-center text-gray-light">Research and Development</div>
                                     </div>
                                 </div>
-                                <div class="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12 w-full">
-                                    <div class="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
-                                    <div class="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
+                                <div className="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12 w-full">
+                                    <div className="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
+                                    <div className="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
                                         <img src="./assets/contributors/kyroh.webp" />
                                     </div>
-                                    <div class="text-center text-gray-light">Kyroh</div>
-                                    <div class="text-center text-gray-light">Research and Development</div>
+                                    <div className="text-center text-gray-light">Kyroh</div>
+                                    <div className="text-center text-gray-light">Research and Development</div>
                                     </div>
                                 </div>
-                                <div class="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12 w-full">
-                                    <div class="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
-                                    <div class="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
+                                <div className="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12 w-full">
+                                    <div className="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
+                                    <div className="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
                                         <img src="./assets/contributors/sfox.webp" />
                                     </div>
-                                    <div class="text-center text-gray-light">Sfox</div>
-                                    <div class="text-center text-gray-light">Research</div>
+                                    <div className="text-center text-gray-light">Sfox</div>
+                                    <div className="text-center text-gray-light">Research</div>
                                     </div>
                                 </div>
-                                <div class="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12 w-full">
-                                    <div class="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
-                                    <div class="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
+                                <div className="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12 w-full">
+                                    <div className="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
+                                    <div className="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
                                         <img src="./assets/contributors/hight.webp" />
                                     </div>
-                                    <div class="text-center text-gray-light">HightDetal</div>
-                                    <div class="text-center text-gray-light">Development</div>
+                                    <div className="text-center text-gray-light">HightDetal</div>
+                                    <div className="text-center text-gray-light">Development</div>
                                     </div>
                                 </div>
-                                <div class="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12 w-full">
-                                    <div class="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
-                                    <div class="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
+                                <div className="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12 w-full">
+                                    <div className="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
+                                    <div className="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
                                         <img src="./assets/contributors/code.webp" />
                                     </div>
-                                    <div class="text-center text-gray-light">Codemati</div>
-                                    <div class="text-center text-gray-light">Development</div>
+                                    <div className="text-center text-gray-light">Codemati</div>
+                                    <div className="text-center text-gray-light">Development</div>
                                     </div>
                                 </div>
-                                <div class="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12 w-full">
-                                    <div class="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
+                                <div className="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12 w-full">
+                                    <div className="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
                                     <a href="https://discord.gg/BGjvs8Y28n">
-                                    <div class="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
+                                    <div className="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
                                         <img src="./assets/contributors/dolf.webp" />
                                     </div>
-                                    <div class="text-center text-gray-light">Gamedolf</div>
-                                    <div class="text-center text-gray-light">RS Math</div>
+                                    <div className="text-center text-gray-light">Gamedolf</div>
+                                    <div className="text-center text-gray-light">RS Math</div>
                                     </a>
                                     </div>
                                 </div>
-                                <div class="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12 w-full">
-                                    <div class="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
-                                        <div class="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
+                                <div className="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12 w-full">
+                                    <div className="w-1/2 pb-8 md:w-1/4 lg:w-1/6 xl:w-full">
+                                        <div className="mx-auto w-24 h-24 rounded-full bg-black overflow-hidden mb-3">
                                             <img src="./assets/contributors/rex.webp" />
                                         </div>
-                                        <div class="text-center text-gray-light">RexT</div>
-                                        <div class="text-center text-gray-light">Legacy Sheet</div>
+                                        <div className="text-center text-gray-light">RexT</div>
+                                        <div className="text-center text-gray-light">Legacy Sheet</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="xl:col-span-9 xl:row-span-1">
-                        <div class="flex flex-col">
-                            <div class="card card-home">
-                                <div class="container mx-auto pb-5">
+                    <div className="xl:col-span-9 xl:row-span-1">
+                        <div className="flex flex-col">
+                            <div className="card card-home">
+                                <div className="container mx-auto pb-5">
                                     <div>
-                                        <h1 class="sm:text-2xl pb-2 uppercase font-bold mb-0">Join us on discord</h1>
+                                        <h1 className="sm:text-2xl pb-2 uppercase font-bold mb-0">Join us on discord</h1>
                                         <a href="https://discord.gg/rsanalysis">
-                                            <img class="w-7/8 sm:w-1/3 pb-2" src="./assets/logo.png" />
+                                            <img className="w-7/8 sm:w-1/3 pb-2" src="./assets/logo.png" />
                                         </a>
-                                        <div class="flex flex-row items-center">
+                                        <div className="flex flex-row items-center">
                                             <a href="https://discord.gg/rsanalysis">
-                                                <img class="w-auto mr-4" src="./assets//google_icons/discord-blue.svg" />
+                                                <img className="w-auto mr-4" src="./assets//google_icons/discord-blue.svg" />
                                             </a>
-                                            <a href="https://discord.gg/rsanalysis" class="py-2 font-normal text-xl text-lb hover:text-link" title="">
-                                                <h2 class="text-md sm:text-2xl font-bold mb-0">discord.gg/rsanalysis</h2>
+                                            <a href="https://discord.gg/rsanalysis" className="py-2 font-normal text-xl text-lb hover:text-link" title="">
+                                                <h2 className="text-md sm:text-2xl font-bold mb-0">discord.gg/rsanalysis</h2>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card-title pb-2">
+                                <div className="card-title pb-2">
                                     Affiliates
                                 </div>
-                                <div class="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12 w-full">
-                                    <div class="effect-container">
-                                        <div class="card-icon rounded-full bg-black overflow-hidden mb-3">
+                                <div className="flex flex-row flex-wrap xl:flex-nowrap xl:gap-12 w-full">
+                                    <div className="effect-container">
+                                        <div className="card-icon rounded-full bg-black overflow-hidden mb-3">
                                             <a href="https://discord.gg/pvme">
                                                 <img src="./assets/contributors/pvme.jpeg" />
                                             </a>
                                         </div>
-                                        <li class="block transition-all duration-75 relative">
-                                            <a href="https://discord.gg/pvme" class="py-2 font-normal text-xl text-lb hover:text-link" title="">
+                                        <li className="block transition-all duration-75 relative">
+                                            <a href="https://discord.gg/pvme" className="py-2 font-normal text-xl text-lb hover:text-link" title="">
                                                 PvM Encyclopedia
                                             </a>
                                         </li>
                                     </div>
-                                    <div class="effect-container">
-                                        <div class="card-icon rounded-full bg-black overflow-hidden mb-3">
+                                    <div className="effect-container">
+                                        <div className="card-icon rounded-full bg-black overflow-hidden mb-3">
                                             <a href="https://discord.gg/BGjvs8Y28n">
                                                 <img src="./assets/contributors/rsmath.png" />
                                             </a>
                                         </div>
-                                        <li class="block transition-all duration-75 relative">
-                                            <a href="https://discord.gg/BGjvs8Y28n" class="py-2 font-normal text-xl text-lb hover:text-link" title="">
+                                        <li className="block transition-all duration-75 relative">
+                                            <a href="https://discord.gg/BGjvs8Y28n" className="py-2 font-normal text-xl text-lb hover:text-link" title="">
                                                 RS Math Discord
                                             </a>
                                         </li>
