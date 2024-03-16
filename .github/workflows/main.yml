@@ -23,9 +23,11 @@ jobs:
         run: npm run predeploy
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
+          name: github-pages
           path: ./dist
+          overwrite: true
   deploy:
     needs: build
 
@@ -41,7 +43,7 @@ jobs:
     steps:
       - name: Deploy to Github Pages
         id: deployment
-        uses: actions/deploy-pages@v3
+        uses: actions/deploy-pages@v4
         with:
           token: ${{ github.token }}
     
