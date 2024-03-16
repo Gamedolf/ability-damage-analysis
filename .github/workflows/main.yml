@@ -3,12 +3,8 @@ on:
   push:
     branches:
       - main
-permissions:
-  id-token: write
-  pages: write
 jobs:
   build:
-    name: Deploy to Github Pages
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -30,9 +26,22 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           path: ./dist
+  deploy:
+    needs: build
 
-      - name: Deploy
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to Github Pages
         id: deployment
         uses: actions/deploy-pages@v4
         with:
           token: ${{ github.token }}
+    
