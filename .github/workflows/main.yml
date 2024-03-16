@@ -3,16 +3,10 @@ on:
   push:
     branches:
       - main
-permissions:
-  id-token: write
-  pages: write
 jobs:
   build:
     name: Deploy to Github Pages
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -28,16 +22,6 @@ jobs:
 
       - name: Predeploy
         run: npm run predeploy
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: github-pages
-          path: ./dist
-          overwrite: true
 
       - name: Deploy
         id: deployment
