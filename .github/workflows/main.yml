@@ -29,6 +29,3 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          publish_dir: ./dist
-          publish_branch: gh-pages
